@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: rgb(37,37,37);
+            height: 200px;
+            width: 100%;
+        } 
+        .map{
+            height: 400px;
+        }
+        .cover{
+            object-fit: cover;
+            height: 250px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="nav-wrapper">
+            <a href="#" class="brand-logo">Site Title</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Trips</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    
+    <ul class="sidenav" id="mobile-links">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Trips</a></li>
+    </ul>
+    
+        <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="./images/manWithLake.jpg"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="./images/hikeMountain.jpg"> <!-- random image -->
+            <div class="caption left-align">
+              <h3>Left Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="./images/camel.jpg"> <!-- random image -->
+            <div class="caption right-align">
+              <h3>See the world differently</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="./images/beach.jpg"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+    
+    
+      <div class=" box">
+        <div class="container">
+
+        </div>
+      </div>
+      <div class="section">
+
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col s6">
+                <div class="col s4 box"></div>
+                <div class="col s4 box grey"></div>
+                <div class="col s4 box"></div>
+                <div class="col s4 box black lighten-3"></div>
+                <div class="col s4 grey box"></div>
+                <div class="col s4 red box"></div>
+              </div>
+              <div class="col s6">
+                  <div class="s12 col red map"></div>
+              </div>
+              
+          </div>
+      </div>
+
+      <div class="parallax-container">
+          <div class="parallax"><img src="./images/hikeMountain.jpg" alt="donkey"></div>
+      </div>    
+          <div class="section white">
+              <div class="container">
+                  <h2 class="header">Header Text</h2>
+              <p class="grey-text text-darken-3 lighten-3">information text</p>
+              </div>
+          </div>
+        <div class="parallax-container">
+            <div class="parallax"><img src="./images/campfire.jpg" alt="donkey"></div>
+        </div>    
+        
+        <div class="container">
+            <div class="section">
+                <h2>Popular Trips</h2>
+            </div>
+            <div class="row">
+                <div class="card large col m4">
+                    <div class="card-image">
+                        <img class="materialboxed cover"src="./images/matterhorn.jpg" alt="matterhorn">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">
+                            Matterhorn
+                        </span>
+                        <p>Switzerland</p>
+                        <p>review</p>
+                        <p>Number of days:</p>
+                        <p>from:</p>
+                        <div class="card-action">
+                            <a href="#!" class="btn white-text red wave-effect waves-light">Book Now</a>
+                            <a href="#!" class="btn white brown-text wave-effect waves-red">More Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card large col m4">
+                    <div class="card-image">
+                        <img class="materialboxed cover"src="./images/australia.jpg" alt="matterhorn">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">
+                            Uluru
+                        </span>
+                        <p>Australia</p>
+                        <p>review</p>
+                        <p>Number of days:</p>
+                        <p>from:</p>
+                        <div class="card-action">
+                            <a href="#!" class="btn white-text red wave-effect waves-light">Book Now</a>
+                            <a href="#!" class="btn white brown-text wave-effect waves-red">More Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card large col m4">
+                    <div class="card-image">
+                        <img class="materialboxed cover"src="./images/venice.jpg" alt="Venice">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">
+                            Venice
+                        </span>
+                        <p>Italy</p>
+                        <p>review</p>
+                        <p>Number of days:</p>
+                        <p>from:</p>
+                        <div class="card-action">
+                            <a href="#!" class="btn white-text red wave-effect waves-light">Book Now</a>
+                            <a href="#!" class="btn white brown-text wave-effect waves-red">More Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card large col m4">
+                    <div class="card-image">
+                        <img class="materialboxed cover"src="./images/camel.jpg" alt="Venice">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">
+                            Egypt
+                        </span>
+                        <p>Egypt</p>
+                        <p>review</p>
+                        <p>Number of days:</p>
+                        <p>from:</p>
+                        <div class="card-action">
+                            <a href="#!" class="btn white-text red wave-effect waves-light">Book Now</a>
+                            <a href="#!" class="btn white brown-text wave-effect waves-red">More Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card large col m4">
+                    <div class="card-image">
+                        <img class="materialboxed cover"src="./images/donkey.jpg" alt="Venice">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">
+                            Venice
+                        </span>
+                        <p></p>
+                        <p>review</p>
+                        <p>Number of days:</p>
+                        <p>from:</p>
+                        <div class="card-action">
+                            <a href="#!" class="btn white-text red wave-effect waves-light">Book Now</a>
+                            <a href="#!" class="btn white brown-text wave-effect waves-red">More Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card large col m4">
+                    <div class="card-image">
+                        <img class="materialboxed cover"src="./images/beachView2.jpg" alt="Venice">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">
+                            Venice
+                        </span>
+                        <p></p>
+                        <p>review</p>
+                        <p>Number of days:</p>
+                        <p>from:</p>
+                        <div class="card-action">
+                            <a href="#!" class="btn white-text red wave-effect waves-light">Book Now</a>
+                            <a href="#!" class="btn white brown-text wave-effect waves-red">More Info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+      
+
+
+
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems, {
+                indicators: false,
+                height: 600,
+                duration: 700,
+            });
+        });
+        M.AutoInit();
+    </script>
+</body>
+</html>
