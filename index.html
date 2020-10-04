@@ -9,7 +9,7 @@
     <title>Document</title>
     <style>
         .box{
-            background-color: rgb(37,37,37);
+            /* background-color: hsl(0, 0%, 15%); */
             height: 200px;
             width: 100%;
         } 
@@ -46,18 +46,23 @@
             width: 100%;
             background-color: black;
             opacity: 0;
-            /* display: none; */
+            display: none; 
         }      
         .grid{
             height: 100%;
             width: 100%;
             object-fit: cover;
         }
-        .coverText{
+        /* .coverText{
             position: absolute;
             height: 100%;
             width: 100%;
             opacity: 0.5;
+        } */
+        .star{
+            font-size: 1rem;
+            color: #ffce00;
+            
         }
     </style>
 </head>
@@ -71,7 +76,7 @@
             <ul class="right hide-on-med-and-down">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="">About</a></li>
-                <li><a href="./allPosts.html">Trips</a></li>
+                <li><a href="#trips">Trips</a></li>
             </ul>
         </nav>
 
@@ -86,37 +91,40 @@
         <div class="slider">
         <ul class="slides">
           <li>
-            <img src="./images/manWithLake.jpg"> <!-- random image -->
+            <img src="./images/manWithLake.jpg"> 
             <div class="caption center-align">
-              <h3 class="black-text text-lighten-2">This is our big Tagline!</h3>
+              <h3 class="black-text text-lighten-2">Travel Site</h3>
               <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+              <a href="#" class="btn large">learn More</a>
             </div>
           </li>
           <li>
-            <img src="./images/asia/tokyo.jpg"> <!-- random image -->
+            <img src="./images/Compressed/tokyo.avif"> 
             <div class="caption left-align">
-              <h3>Left Aligned Caption</h3>
+              <h3>Take your dream vacation</h3>
               <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+              <a href="#" class="btn large">learn More</a>
             </div>
           </li>
           <li>
-            <img src="./images/camel.jpg"> <!-- random image -->
-            <div class="black-text text-lighten-2 caption right-align">
-              <h3>See the world differently</h3>
-              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            <img src="./images/camel.jpg"> 
+            <div class="white-text text-lighten-2 caption right-align">
+              <h3>Expert local guides</h3>
+              <h5 class="light grey-text text-lighten-3">Chosen for great knowledge of their country, and a passion to make your trip extraordinary.</h5>
+              <a href="#" class="btn large">learn More</a>
             </div>
           </li>
           <li>
-            <img src="./images/beach.jpg"> <!-- random image -->
+            <img src="./images/beach.jpg"> 
+            <div class="white-text caption center-align">
+              <h3>Take a break</h3>
+              <h5 class="light grey-text text-lighten-3">You deserve it</h5>
+            </div>
+          </li>
+          <li>
+            <img src="./images/campfire.jpg"> 
             <div class="black-text text-lighten-2 caption center-align">
-              <h3>This is our big Tagline!</h3>
-              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-            </div>
-          </li>
-          <li>
-            <img src="./images/campfire.jpg"> <!-- random image -->
-            <div class="black-text text-lighten-2 caption center-align">
-              <h3>This is our big Tagline!</h3>
+              <h3>Where will your next tour take you?</h3>
               <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
             </div>
           </li>
@@ -151,7 +159,7 @@
                       <div class="col s4 box">
                     <h3>Places to go</h3>
                 </div>
-                <div class="col s4 box grey">
+                <div class="col s4 box ">
                     <div class="coverText"></div>
                     <img class="grid" src="./images/australia.jpg" alt="">
                 </div>
@@ -160,20 +168,20 @@
                 </div>
                   </div>
                 <div class="row">
-                    <div class="col s4 box black lighten-3">
+                    <div class="col s4 box  lighten-3">
                     <img class="grid" src="./images/venice.jpg" alt="">
                 </div>
-                <div class="col s4 grey box">
+                <div class="col s4  box">
                     <img class="grid" src="./images/camel.jpg" alt="">
                 </div>
-                <div class="col s4 red box">
-                    <img class="grid" src="./images/asia/greatWall.jpg" alt="">
+                <div class="col s4 box">
+                    <img class="grid" src="./images/Compressed/greatWall.avif" alt="">
                 </div>
                 </div>
                 
               </div>
               <div class="col s12 m6">
-                  <div class="s12 col red map">
+                  <div class="s12 col map">
                     <img class="grid" src="./images/donkey.jpg" alt="">
                   </div>
               </div>
@@ -186,43 +194,53 @@
       </div>    
           <div class="section white">
               <div class="container">
-                  <h2 class="header center-align">Site Title</h2>
+                  <h2 class="header center-align">Holiday Site</h2>
                     <div class="row">
                         <div class="col m4">
-                            <i class="material-icons">supervisor_account</i>
+                            <i class="material-icons large">supervisor_account</i>
                             <h4>With you all the way</h4>
                             <p>
                             Our holidays are fully protected with our COVID cover and travel With confidence with 24 hour support via our holiday line
                             </p>
                         </div>
-                        <div class="col m4">
-                            <i class="material-icons sharp">payments</i>
+                        <div class="col m4 ">
+                            <i class="material-icons large">payments</i>
                             <h4>Affordable prices</h4>
                             <p>
                             Our products cover a range of prices suitable for all budgets.
                             </p>
                         </div>
                         <div class="col m4">
-                            <i class="material-icons">terrain</i>
+                            <i class="material-icons large">terrain</i>
                             <h4>Unforgettable Experiences</h4>
                             <p>From big wows to hidden gems, our tours leave you feeling that you've really explored.</p>
                         </div>
                     </div>
                     <div class="section">
                         <h4 class="center-align">About Us</h4>
-                        <p class="center-align">When it comes to booking a holiday, we know everyone likes something different - so we've designed our getaways with you in mind from all reaches
+                        <p class="center-align">We are a award-winning travel-agency that
+                            has been committed to bringing our clients the best in value and quality travel arrangements. We are passionate about travel and sharing the world's wonders on the leisure travel side, and providing corporate travelers hi-touch services to facilitate their business travel needs.
+                        </p><p> When it comes to booking a holiday, we know everyone likes something different - so we've designed our getaways with you in mind from all reaches
                             of the globe.</p>
                     </div>
                     
               </div>
-                <div class="section red">
+                <div class="section red lighten-2">
                         <h4 class="center-align">Follow Us</h4>
+                        <h5>Follow us on social media</h5>
                         <i></i>
-                    </div>
+                    </div><div class="section">
+                <h2 class="center-align" id="trips">Trips</h2>
+            </div>
                   <div class="section auto">
-                      <div class="section overlay white"></div>
-                        <iframe src="https://www.google.com/maps/d/embed?mid=1eh3FVN06SBX1E81tZTadQoVS_q1FjlMG&hl=en" width="100%" height="400px"  frameborder="0" style="border:0" allowfullscreen></iframe>
+                      
+                      <div class="container">
+                          <div class="section overlay white"></div>
+                        <iframe src="https://www.google.com/maps/d/embed?mid=1eh3FVN06SBX1E81tZTadQoVS_q1FjlMG&hl=en" width="100%" height="450px"  frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <!-- <iframe src="https://www.atlistmaps.com/map/3fd1ed65-396e-4283-9c77-978ef304bc63?share=true" allow="geolocation" width="100%" height="400px" frameborder="0" scrolling="no"></iframe> -->
                         <div class="section covered"></div>
+                      </div>
+                      
                     </div>
                     <div class="section"></div>
               
@@ -233,13 +251,25 @@
             <div class="parallax"><img src="./images/campfire.jpg" alt="donkey"></div>
         </div>    
          -->
-        <div class="container">
-            <div class="section">
-                <h2 class="center-align">Popular Trips</h2>
+        <div class="container" >
+            
+            <div class="container">
+                <div class="row">
+                <div class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">search</i>
+                      <input type="text" id="autocomplete-input" class="autocomplete">
+                      <label for="autocomplete-input">Search Trips</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="row">
-                <div class="card large col s12 m6 l4">
-                    <div class="card-image">
+                <div class="col m12 l4">
+                    <div class="card large">
+                        <div class="card-image">
                         <img class="materialboxed cover"src="./images/matterhorn.jpg" alt="matterhorn">
                     </div>
                     <div class="card-content">
@@ -247,17 +277,24 @@
                             Matterhorn
                         </span>
                         <p>Switzerland</p>
-                        <p>review</p>
-                        <p>Number of days:</p>
-                        <p>from:</p>
+                            <i class="material-icons text-yellow text-darken-2 star">star</i><i class="material-icons star">star</i><i class="material-icons star">star</i><i class="material-icons star">star</i><i class="material-icons star">star_outline</i>
+                        
+                            
+            
+                        <p>Number of days: 10</p>
+                        <p>from: £1000</p>
                         <div class="card-action">
                             <a href="#!" class="btn white-text red wave-effect waves-light">Book Now</a>
                             <a href="#!" class="btn white brown-text wave-effect waves-red">More Info</a>
                         </div>
                     </div>
+                    </div>
+                    
                 </div>
-                <div class="card large col s12 m6 l4">
-                    <div class="card-image">
+
+                <div class="col m12 l4">
+                    <div class="card large">
+                        <div class="card-image">
                         <img class="materialboxed cover"src="./images/australia.jpg" alt="matterhorn">
                     </div>
                     <div class="card-content">
@@ -265,98 +302,219 @@
                             Uluru
                         </span>
                         <p>Australia</p>
-                        <p>review</p>
-                        <p>Number of days:</p>
-                        <p>from:</p>
+                        
+                            <i class="material-icons star">star</i><i class="material-icons star">star</i><i class="material-icons star">star</i><i class="material-icons star">star_outline</i><i class="material-icons star">star_outline</i>
+                        
+                        
+                        <p>Number of days: 11</p>
+                        <p>from: <span>£1100</span></p>
                         <div class="card-action">
                             <a href="#!" class="btn white-text red wave-effect waves-light">Book Now</a>
                             <a href="#!" class="btn white brown-text wave-effect waves-red">More Info</a>
                         </div>
                     </div>
-                </div>
-                <div class="card large col s12 m6 l4">
-                    <div class="card-image">
-                        <img class="materialboxed cover"src="./images/venice.jpg" alt="Venice">
                     </div>
-                    <div class="card-content">
-                        <span class="card-title">
-                            Venice
-                        </span>
-                        <p>Italy</p>
-                        <p>review</p>
-                        <p>Number of days:</p>
-                        <p>from:</p>
-                        <div class="card-action">
-                            <a href="#!" class="btn white-text red wave-effect waves-light">Book Now</a>
-                            <a href="#!" class="btn white brown-text wave-effect waves-red">More Info</a>
+                    
+                </div>
+
+
+                <div class="col m12 l4">
+                    <div class="card large">
+                        <div class="card-image">
+                            <img class="materialboxed cover"src="./images/venice.jpg" alt="Venice">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">
+                                Venice
+                            </span>
+                            <p>Italy</p>
+                            <i class="material-icons star">star</i><i class="material-icons star">star</i><i class="material-icons star">star</i><i class="material-icons star">star</i><i class="material-icons star">star_outline</i>
+                            <p>Number of days: 6</p>
+                            <p>from: £800</p>
+                            <div class="card-action">
+                                <a href="#!" class="btn white-text red wave-effect waves-light">Book Now</a>
+                                <a href="#!" class="btn white brown-text wave-effect waves-red">More Info</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="card large col s12 m6 l4">
-                    <div class="card-image">
-                        <img class="materialboxed cover"src="./images/camel.jpg" alt="Venice">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title">
-                            Egypt
-                        </span>
-                        <p>Egypt</p>
-                        <p>review</p>
-                        <p>Number of days:</p>
-                        <p>from:</p>
-                        <div class="card-action">
-                            <a href="#!" class="btn white-text red wave-effect waves-light">Book Now</a>
-                            <a href="#!" class="btn white brown-text wave-effect waves-red">More Info</a>
+                <div class=" col m12 l4">
+                    <div class="card large">
+                        <div class="card-image">
+                            <img class="materialboxed cover"src="./images/camel.jpg" alt="Venice">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">
+                                Egypt
+                            </span>
+                            <p>Egypt</p>
+                            
+                                <i class="material-icons star">star</i><i class="material-icons star">star</i><i class="material-icons star">star</i><i class="material-icons star">star</i><i class="material-icons star">star_half</i>
+                            
+                                <!-- <p >30 Reviews</p> -->
+                            
+                            
+                            <p>Number of days: 5-7</p>
+                            <p>from: £600</p>
+                            <div class="card-action">
+                                <a href="#!" class="btn white-text red wave-effect waves-light">Book Now</a>
+                                <a href="#!" class="btn white brown-text wave-effect waves-red">More Info</a>
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
-                <div class="card large col s12 m6 l4">
-                    <div class="card-image">
+                <div class="col m12 l4">
+                    <div class="card large">
+                        <div class="card-image">
                         <img class="materialboxed cover"src="./images/canadaMountain.jpg" alt="Venice">
-                    </div>
-                    <div class="card-content">
+                        </div>
+                        <div class="card-content">
                         <span class="card-title">
                             Canada
                         </span>
                         <p></p>
-                        <p>review</p>
-                        <p>Number of days:</p>
-                        <p>from:</p>
+                        
+                            <i class="material-icons star">star</i><i class="material-icons star">star</i><i class="material-icons star">star</i><i class="material-icons star">star_half</i><i class="material-icons star">star_outline</i>
+                        
+                        
+                        <p class="col s12">Number of days:11</p>
+                        <p class="col s12">from: £1100</p>
                         <div class="card-action">
                             <a href="#!" class="btn white-text red wave-effect waves-light">Book Now</a>
                             <a href="#!" class="btn white brown-text wave-effect waves-red">More Info</a>
                         </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card large col s12 m6 l4">
-                    <div class="card-image">
+                <div class="col m12 l4">
+                    <div class="card large">
+                        <div class="card-image">
                         <img class="materialboxed cover"src="./images/beachView2.jpg" alt="Venice">
                     </div>
                     <div class="card-content">
                         <span class="card-title">
-                            
+                            Hawaii
                         </span>
                         <p></p>
-                        <p>review</p>
-                        <p>Number of days:</p>
-                        <p>from:</p>
+                        
+                            <i class="material-icons star">star</i><i class="material-icons star">star</i><i class="material-icons star">star</i><i class="material-icons star">star</i><i class="material-icons star">star_outline</i>
+                        
+                        <p>Number of days: 7</p>
+                        <p>from: <span>£400</span></p>
                         <div class="card-action">
                             <a href="#!" class="btn white-text red wave-effect waves-light">Book Now</a>
                             <a href="#!" class="btn white brown-text wave-effect waves-red">More Info</a>
                         </div>
                     </div>
+                    </div>
+                    
+                </div>
+                <div class="col  m12 l4">
+                    <div class="card large">
+                        <div class="card-image">
+                        <img class="materialboxed cover"src="./images/Compressed/Chinabuilding.avif" alt="Venice">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">
+                            China
+                        </span>
+                        <p></p>
+                        
+                            <i class="material-icons star">star</i><i class="material-icons star">star</i><i class="material-icons star">star</i><i class="material-icons star">star</i><i class="material-icons star">star_outline</i>
+                        
+                        <p>Number of days: 7</p>
+                        <p>from: <span>£400</span></p>
+                        <div class="card-action">
+                            <a href="#!" class="btn white-text red wave-effect waves-light">Book Now</a>
+                            <a href="#!" class="btn white brown-text wave-effect waves-red">More Info</a>
+                        </div>
+                    </div>
+                    </div>
+                    
+                </div>
+                <div class="col m12 l4">
+                    <div class="card large">
+                        <div class="card-image">
+                        <img class="materialboxed cover"src="./images/cape-town.jpg" alt="cape-town">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">
+                            Cape Town
+                        </span>
+                        <p></p>
+                        
+                            <i class="material-icons star">star</i><i class="material-icons star">star</i><i class="material-icons star">star</i><i class="material-icons star">star</i><i class="material-icons star">star_outline</i>
+                        
+                        <p>Number of days: 7</p>
+                        <p>from: <span>£400</span></p>
+                        <div class="card-action">
+                            <a href="#!" class="btn white-text red wave-effect waves-light">Book Now</a>
+                            <a href="#!" class="btn white brown-text wave-effect waves-red">More Info</a>
+                        </div>
+                    </div>
+                    </div>
+                    
+                </div>
+                <div class="col m12  l4">
+                    <div class="card large">
+                        <div class="card-image">
+                        <img class="materialboxed cover"src="./images/Compressed/mtfuji.avif" alt="Venice">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">
+                            Japan
+                        </span>
+                        <p></p>
+                        
+                            <i class="material-icons star">star</i><i class="material-icons star">star</i><i class="material-icons star">star</i><i class="material-icons star">star</i><i class="material-icons star">star_outline</i>
+                        
+                        <p>Number of days: 7</p>
+                        <p>from: <span>£400</span></p>
+                        <div class="card-action">
+                            <a href="#!" class="btn white-text red wave-effect waves-light">Book Now</a>
+                            <a href="#!" class="btn white brown-text wave-effect waves-red">More Info</a>
+                        </div>
+                    </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
         <a href="./allPosts.html" class="btn red white-text">All Trips</a>
 
         <a href="#" class="btn"><i class="material-icons">keyboard_arrow_up</i> Back to top</a>
-        <footer class="footer">
+        <!-- <footer class="footer">
             <div class="section">
                 <h4>Site Title</h4>
             </div>
-        </footer>
-
+        </footer> -->
+        <footer class="page-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="white-text">Footer Content</h5>
+                  <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">Links</h5>
+                  <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+              © 2014 Copyright Text
+              <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+              </div>
+            </div>
+          </footer>
+              
 
 
     <script>
@@ -367,7 +525,16 @@
             });
         });
 
-
+        document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.autocomplete');
+    var instances = M.Autocomplete.init(elems, {
+        data:{
+            Australia: null,
+            china: null,
+            Switzerland: null,
+        }
+    });
+  });
         document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.slider');
             var instances = M.Slider.init(elems, {
