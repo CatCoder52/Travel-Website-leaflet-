@@ -1,0 +1,24 @@
+.normalMarker{
+    display: block;
+}
+.fullscreenMarker{
+    display: none;
+}
+
+.fullscreenContent .leaflet-popup-content-wrapper .leaflet-popup-content .card.large .card-image{
+    max-height: 50%;
+}
+.fullscreenContent .leaflet-popup-content-wrapper .leaflet-popup-content .card.large .card-content .card-action{
+    display: none;
+}
+.fullscreenContent .leaflet-popup-content-wrapper .leaflet-popup-content .card.large{
+    max-height: 300px;
+    height: auto;
+}
+.fullscreenContent .leaflet-popup-content-wrapper .leaflet-popup-content .card.large .card-image .material-placeholder img{
+height: 100px;
+}
+.fullscreenContent .leaflet-popup-content-wrapper .leaflet-popup-content .card.large .card-content{
+    padding: 10px;
+    height: 50%;
+}
