@@ -29,7 +29,8 @@
     ></script>
     <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
-    <title>Document</title>
+<link rel="stylesheet" href="./styles.css">   
+<title>Document</title>
     <style>
       .box {
         /* background-color: hsl(0, 0%, 15%); */
@@ -167,30 +168,11 @@
       .leaflet-popup-content{
         text-align: center;
       }
-      .test{
-          width: 100%!important;
-    height: 100%!important;
-    margin: 0;
-    object-fit: contain;
-    position: fixed !important;
-    top: 0px !important;
-    right: 0px !important;
-    bottom: 0px !important;
-    left: 0px !important;
-    box-sizing: border-box !important;
-    min-width: 0px !important;
-    max-width: none !important;
-    min-height: 0px !important;
-    max-height: none !important;
-    width: 100% !important;
-    height: 100% !important;
-    transform: none !important;
-    margin: 0px !important;
-      }
+      
       .leaflet-show-search-markers .leaflet-control-container .leaflet-top.leaflet-right input{
           display: block !important;
       }
-      input:not([type]).leaflet-search-marker{
+      input:not([type]).leaflet-search-marker, .leaflet-control-searchBar{
           /* display: none; */
           
           box-shadow: 1px 1px 2px 1px lightslategray;
@@ -501,7 +483,7 @@
         <div class="row">
           <div class="input-field col s12">
             <i class="material-icons prefix">search</i>
-            <input type="text" id="autocomplete-input" class="autocomplete" />
+            <input type="text" id="autocomplete-input" class="autocomplete" autocomplete="off"/>
             <label for="autocomplete-input">Search Trips</label>
           </div>
         </div>
