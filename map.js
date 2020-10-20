@@ -5,6 +5,7 @@ const tileUrl = `https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png`
 const tiles = L.tileLayer(tileUrl,{attribution})
 tiles.addTo(mymap)
 
+mymap.addControl(new L.Control.SearchMarker({toggleFullscreen: true}));
  mymap.addControl(new L.Control.Fullscreen());
 
 // // `fullscreenchange` Event that's fired when entering or exiting fullscreen.
@@ -12,10 +13,12 @@ mymap.on('fullscreenchange', function () {
     console.log('test')
     if (mymap.isFullscreen()) {
         console.log('entered fullscreen');
+        mymap.toggleShowSearchMarker();
         mymap.setZoom(2)
         mymap.fitWorld();
         
     } else {
+        mymap.toggleShowSearchMarker();
         console.log('exited fullscreen');
         mymap.setView([30,0],0)
     }
