@@ -128,7 +128,7 @@
         }
       }
       #mapid {
-        height: 180px;
+        height: 250px;
       }
       html {
         scroll-behavior: smooth;
@@ -172,19 +172,24 @@
       .leaflet-show-search-markers .leaflet-control-container .leaflet-top.leaflet-right input{
           display: block !important;
       }
-      input:not([type]).leaflet-search-marker, .leaflet-control-searchBar{
+      .leaflet-control-searchBar{
           /* display: none; */
           
           box-shadow: 1px 1px 2px 1px lightslategray;
           background-color: #fff;
           border: 2px solid rgba(0,0,0,0.2);
           border-radius: 5px;
-          height: 20px;
+          height: fit-content;
           padding: 0px 5px;
           box-sizing: border-box;
           outline: lightslategray;
       }
-
+      input:not([type]).leaflet-search-marker{
+        height: 24px;
+        margin-bottom: 2px;
+        outline: none;
+        
+      }
     </style>
   </head>
   <body>
@@ -535,7 +540,7 @@
         </div>
 
         <div class="col s12 l4 holiday">
-          <div class="card large" id="uluruTrip">
+          <div class="card large" id="australiaTrip">
             <div class="card-image">
                 <picture>
                     <source  media="(min-width:1280px)" srcset="./images/1280x1024/australia.jpg">
@@ -635,8 +640,8 @@
           </div>
         </div>
         <div class="col s12 l4 holiday">
-          <div class="card large">
-            <div class="card-image" id="canadaTrip">
+          <div class="card large" id="canadaTrip">
+            <div class="card-image" >
                 <picture>
                     <source  media="(min-width:1280px)" srcset="./images/1280x1024/canadaMountain.jpg">
                     <source  media="(min-width:1024px)" srcset="./images/1024x768/canadaMountain.jpg"> 

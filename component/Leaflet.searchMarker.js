@@ -29,6 +29,11 @@ L.Control.SearchMarker = L.Control.extend({
       "div",
       "leaflet-control-searchBar leaflet-searchBar"
     );
+    const icon = document.createElement('i', {class: 'material-icons prefix'});
+    icon.classList.add('material-icons')
+    icon.classList.add('prefix')
+    icon.textContent = 'search';
+    container.appendChild(icon)
     this.link = L.DomUtil.create(
       "a",
       "leaflet-control-searchBar-button leaflet-searchbar-part",
@@ -61,24 +66,10 @@ L.Control.SearchMarker = L.Control.extend({
     return container;
   },
 
-  setPosition: function (position) {
-    var map = this._map;
-
-    if (map) {
-        map.removeControl(this);
-    }
-
-    this.options.position = position;
-
-    if (map) {
-        map.addControl(this);
-    }
-    this.startSlider();
-    return this;
-  },
+  
   changeValue: function(value){
     this.searchMarker.value = value;
-    searchChange({target:{value: value}})
+    this.searchChange({target:{value: value}})
   },
 
 
@@ -86,6 +77,7 @@ L.Control.SearchMarker = L.Control.extend({
     L.DomEvent.stopPropagation(e);
     L.DomEvent.preventDefault(e);
     console.log('clicked');
+    
     //this._map.toggleFullscreen(this.options);
   },
   _change: function (e) {
@@ -93,6 +85,7 @@ L.Control.SearchMarker = L.Control.extend({
     L.DomEvent.preventDefault(e);
     console.log('changed')
     this.searchChange(e, this.options);
+    this._map._onSearchmarkerchange();
   },
  
 
@@ -154,8 +147,9 @@ L.Map.include({
         this.invalidateSize();
   },
 
-  _onSearchmarkerchange: function (e) {
-      console.log('onSearchMarkerChange fired')
+  _onSearchmarkerchange: function () {
+      console.log('onSearchMarkerChange fired');
+      this.fire('searchMarkerChange');
 
   },
   
