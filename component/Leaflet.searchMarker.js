@@ -100,6 +100,7 @@ L.Control.SearchMarker = L.Control.extend({
   searchChange: function (e) {
     _options = this.options;
     var map = _options.map;
+    const value = e.target.value.toLowerCase();
     var fg = L.featureGroup();
         var i;
         // clear markers
@@ -108,7 +109,7 @@ L.Control.SearchMarker = L.Control.extend({
             console.log('removed a layer')
         }
         for (i = _options.minValue; i <= _options.maxValue; i++) {
-                if(_options.markers[i] && _options.markers[i].options[_options.searchAttribute].includes(e.target.value)) {
+                if(_options.markers[i] && _options.markers[i].options[_options.searchAttribute].includes(value)) {
                     map.addLayer(_options.markers[i]);
                     fg.addLayer(_options.markers[i]);
                 }

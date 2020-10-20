@@ -3,6 +3,7 @@ const holidays = document.querySelectorAll('.holidayName');
 const countries = document.querySelectorAll('.country');
 const locationPictures = document.querySelectorAll('.place');
 const inputLocation = document.querySelector('#inputLocation')
+const mapInput = document.querySelector('.leaflet-search-marker')
 function checkItems(e){
     const value = e.target.value.toLowerCase();
     holidays.forEach((holiday, index)=>{
@@ -16,15 +17,11 @@ function checkItems(e){
 }
 
 
-searchResult.addEventListener('keyup', e => {
+searchResult.addEventListener('input', e => {
     checkItems(e);
-    checkMap(e);
+    searchController.changeValue(e.target.value);
 });
 
-searchResult.addEventListener('change', e => {
-    checkItems(e);
-    checkMap(e);
-});
 
 
 
@@ -45,8 +42,23 @@ const send= ()=>{
         }
     }
     checkItems(data);
-    checkMap(data);
+    searchController.changeValue(searchBar.value);
     const yOffset = -300; 
     const y = searchResult.getBoundingClientRect().top + window.pageYOffset + yOffset;
     window.scrollTo({top: y});
+    checkItems(e);
+    searchController.changeValue(searbBar.value);
 }
+// mymap.on('searchMarkerChange', ()=>{
+//     console.log('searchMarkerChange');
+//     if(searchResult.value= undefined){
+//         console.log('none')
+        
+//     }
+//     //
+//     searchResult.focus();
+//     mapInput.focus()
+//     searchResult.value = mapInput.value;
+    
+// })
+
