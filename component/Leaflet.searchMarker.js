@@ -42,9 +42,6 @@ L.Control.SearchMarker = L.Control.extend({
     this.link.href = "#";
     this._map = map;
 
-
-
-  
     if (this._layer) {
       var index_temp = 0;
       this._layer.eachLayer(function (layer) {
@@ -79,7 +76,10 @@ L.Control.SearchMarker = L.Control.extend({
     this.startSlider();
     return this;
   },
-
+  changeValue: function(value){
+    this.searchMarker.value = value;
+    searchChange({target:{value: value}})
+  },
 
 
   _click: function (e) {
@@ -92,26 +92,27 @@ L.Control.SearchMarker = L.Control.extend({
     L.DomEvent.stopPropagation(e);
     L.DomEvent.preventDefault(e);
     console.log('changed')
-    this.searchChange(e.target.value, this.options);
+    this.searchChange(e, this.options);
   },
  
 
   startSearch: function(e){
     _options = this.options;
-    searchChange(e, _options)
     for (i = _options.minValue; i <= _options.minValue; i++) {
           _options.map.addLayer(_options.markers[i]);
+          console.log('added')
     }
   },
-
-  searchChange: function (e, _options) {
+  
+  searchChange: function (e) {
+    _options = this.options;
     var map = _options.map;
     var fg = L.featureGroup();
-
         var i;
         // clear markers
         for (i = _options.minValue; i <= _options.maxValue; i++) {
             if(_options.markers[i]) map.removeLayer(_options.markers[i]);
+            console.log('removed a layer')
         }
         for (i = _options.minValue; i <= _options.maxValue; i++) {
                 if(_options.markers[i] && _options.markers[i].options[_options.searchAttribute].includes(e.target.value)) {
@@ -125,25 +126,6 @@ L.Control.SearchMarker = L.Control.extend({
 L.Map.include({
   isShowingSearchMark: function () {
     return this._isShowingSearchMark || false;
-  },
-  searchChange: function (inputValue) {
-    console.log('onSearchMarkerChange');
-    let places = document.querySelectorAll(".leaflet-marker-icon");
-    const shadows = document.querySelector(".leaflet-shadow-pane");
-    if (inputValue === "") {
-      shadows.style.display = "block";
-    } else {
-      shadows.style.display = "none";
-    }
-     const value = inputValue.toLowerCase();
-    places.forEach(place => {
-      if (place.classList[3].includes(value)) {
-        place.style.display = "block";
-      } else {
-        place.style.display = "none";
-      }
-      
-    });
   },
 
   toggleShowSearchMarker: function(options){
@@ -162,41 +144,19 @@ L.Map.include({
         this._setSearchMarker(true);
     },
     _hideSearchBar: function(container){
-        L.DomUtil.addClass(container, 'leaflet-show-search-markers');
+        L.DomUtil.removeClass(container, 'leaflet-show-search-markers');
         this._setSearchMarker(false);
     },
   
 
     _setSearchMarker: function (showSearch) {
-        var container = this.getContainer()
         this._isShowingSearchMark = showSearch;
-        console.log(showSearch)
-    if (showSearch) {
-      L.DomUtil.addClass(container, "leaflet-show-search-markers");
-    } else {
-      L.DomUtil.removeClass(container, "leaflet-show-search-markers");
-    }
-    this.invalidateSize();
+        this.invalidateSize();
   },
 
   _onSearchmarkerchange: function (e) {
       console.log('onSearchMarkerChange fired')
-    let places = document.querySelectorAll(".leaflet-marker-icon");
-    const shadows = document.querySelector(".leaflet-shadow-pane");
-    if (e.target.value === "") {
-      shadows.style.display = "block";
-    } else {
-      shadows.style.display = "none";
-    }
-    const value = e.target.value.toLowerCase();
-    places.forEach((place) => {
-      if (place.classList[3].includes(value)) {
-        place.style.display = "block";
-      } else {
-        place.style.display = "none";
-      }
-      
-    });
+
   },
   
 });
