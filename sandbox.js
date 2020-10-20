@@ -18,10 +18,12 @@ function checkItems(e){
 
 searchResult.addEventListener('keyup', e => {
     checkItems(e);
+    checkMap(e);
 });
 
 searchResult.addEventListener('change', e => {
     checkItems(e);
+    checkMap(e);
 });
 
 
@@ -43,6 +45,7 @@ const send= ()=>{
         }
     }
     checkItems(data);
+    checkMap(data);
     const yOffset = -300; 
     const y = searchResult.getBoundingClientRect().top + window.pageYOffset + yOffset;
     window.scrollTo({top: y});
