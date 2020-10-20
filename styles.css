@@ -22,3 +22,16 @@ height: 100px;
     padding: 10px;
     height: 50%;
 }
+
+
+.leaflet-control-searchBar{
+    width: 8em;
+    display: flex;
+    font-size: 2em;
+    max-width: 50vw;
+}
+.leaflet-control-searchBar input{
+    outline: none;
+    width: 90%;
+    
+}

@@ -160,7 +160,7 @@
         background-position: center;
         object-fit: cover;
       }
-      @media(max-width: 360px){
+      @media(max-width: 500px){
         .parallax-container{
             height: 250px;
         }
@@ -189,6 +189,9 @@
         margin-bottom: 2px;
         outline: none;
         
+      }
+      .navbar-fixed{
+        z-index: 1001;
       }
     </style>
   </head>
@@ -326,7 +329,7 @@
             >
               <p class="white-text center-align">Australia</p>
             </div>
-            <img class="grid" src="./images/australia.jpg" alt="" />
+            <img class="grid" src="./images/fullSizeImages/australia.jpg" alt="" />
           </div>
           <div class="col s6 m4 box coverBox">
             <div
@@ -335,7 +338,7 @@
             >
               <p class="white-text center-align location">Hawaii</p>
             </div>
-            <img class="grid" src="./images/beach.jpg" alt="" />
+            <img class="grid" src="./images/fullSizeImages/beach.jpg" alt="" />
           </div>
 
           <div class="col s6 m4 box lighten-3 coverBox">
@@ -345,7 +348,7 @@
             >
               <p class="white-text center-align">Italy</p>
             </div>
-            <img class="grid" src="./images/venice.jpg" alt="" />
+            <img class="grid" src="./images/fullSizeImages/venice.jpg" alt="" />
           </div>
           <div class="col s6 m4 box coverBox">
             <div
@@ -372,7 +375,7 @@
             <img
               class="grid materialboxed"
               style="height: 29.063em"
-              src="./images/donkey.jpg"
+              src="./images/fullSizeImages/donkey.jpg"
               alt=""
             />
           </div>
@@ -412,10 +415,11 @@
     <div class="parallax-container">
       <div class="parallax">
         <picture>
+          
             <source  media="(min-width:1280px)" srcset="./images/1280x1024/hikeMountain.jpg">
-            <source  media="(min-width:1024px)" srcset="./images/1024x768/hikeMountain.jpg"> 
+            <source  media="(min-width:500px)" srcset="./images/1024x768/hikeMountain.jpg"> 
             <source  media="(min-width:360px)" srcset="./images/360x740/hikeMountain.jpg">       
-            <img src="./images/hikeMountain.jpg" />
+            <img src="./images/fullSizeImages/hikeMountain.jpg" />
         </picture>
         
       </div>
@@ -512,7 +516,7 @@
                     <source  media="(min-width:1280px)" srcset="./images/1280x1024/matterhorn.jpg">
                     <source  media="(min-width:1024px)" srcset="./images/1024x768/matterhorn.jpg"> 
                     <source  media="(max-width:360px)" srcset="./images/360x740/matterhorn.jpg">       
-                    <img class="materialboxed cover" src="./images/matterhorn.jpg" alt="australia uluru"/>
+                    <img class="materialboxed cover" src="./images/fullSizeImages/matterhorn.jpg" alt="australia uluru"/>
                 </picture>
               
             </div>
@@ -546,7 +550,7 @@
                     <source  media="(min-width:1280px)" srcset="./images/1280x1024/australia.jpg">
                     <source  media="(min-width:1024px)" srcset="./images/1024x768/australia.jpg"> 
                     <source  media="(max-width:360px)" srcset="./images/360x740/australia.jpg">       
-                    <img class="materialboxed cover" src="./images/australia.jpg" alt="australia uluru"/>
+                    <img class="materialboxed cover" src="./images/fullSizeImages/australia.jpg" alt="australia uluru"/>
                 </picture>
               
             </div>
@@ -581,7 +585,7 @@
                     <source  media="(min-width:1280px)" srcset="./images/1280x1024/venice.jpg">
                     <source  media="(min-width:1024px)" srcset="./images/1024x768/venice.jpg"> 
                     <source  media="(max-width:360px)" srcset="./images/360x740/venice.jpg">       
-                    <img class="materialboxed cover" src="./images/venice.jpg" alt="Venice"/>
+                    <img class="materialboxed cover" src="./images/fullSizeImages/venice.jpg" alt="Venice"/>
                 </picture>
             </div>
             <div class="card-content">
@@ -646,7 +650,7 @@
                     <source  media="(min-width:1280px)" srcset="./images/1280x1024/canadaMountain.jpg">
                     <source  media="(min-width:1024px)" srcset="./images/1024x768/canadaMountain.jpg"> 
                     <source  media="(max-width:360px)" srcset="./images/360x740/canadaMountain.jpg">       
-                    <img class="materialboxed cover" src="./images/canadaMountain.jpg" alt="canada Mountain"/>
+                    <img class="materialboxed cover" src="./images/fullSizeImages/canadaMountain.jpg" alt="canada Mountain"/>
                 </picture>
             </div>
             <div class="card-content">
@@ -679,7 +683,7 @@
                     <source  media="(min-width:1280px)" srcset="./images/1280x1024/beachView2.jpg">
                     <source  media="(min-width:1024px)" srcset="./images/1024x768/beachView2.jpg"> 
                     <source  media="(max-width:360px)" srcset="./images/360x740/beachView2.jpg">       
-                    <img class="materialboxed cover" src="./images/beachView2.jpg" alt="beach"/>
+                    <img class="materialboxed cover" src="./images/fullSizeImages/beachView2.jpg" alt="beach"/>
                 </picture>
             </div>
             <div class="card-content">
@@ -712,7 +716,7 @@
                     <source  media="(min-width:1280px)" srcset="./images/1280x1024/Chinabuilding.jpg">
                     <source  media="(min-width:1024px)" srcset="./images/1024x768/Chinabuilding.jpg"> 
                     <source  media="(max-width:360px)" srcset="./images/360x740/Chinabuilding.jpg">       
-                    <img class="materialboxed cover" src="./images/asia/Chinabuilding.jpg" alt="beach"/>
+                    <img class="materialboxed cover" src="./images/fullSizeImages/Chinabuilding.jpg" alt="beach"/>
                 </picture> 
               
             </div>
@@ -746,7 +750,7 @@
                     <source  media="(min-width:1280px)" srcset="./images/1280x1024/cape-town.jpg">
                     <source  media="(min-width:1024px)" srcset="./images/1024x768/cape-town.jpg"> 
                     <source  media="(max-width:360px)" srcset="./images/360x740/cape-town.jpg">       
-                    <img class="materialboxed cover" src="./images/cape-town.jpg" alt="cape-town"/>
+                    <img class="materialboxed cover" src="./images/fullSizeImages/cape-town.jpg" alt="cape-town"/>
                 </picture> 
               
             </div>
