@@ -102,6 +102,7 @@ L.Control.SearchMarker = L.Control.extend({
     var map = _options.map;
     const value = e.target.value.toLowerCase();
     var fg = L.featureGroup();
+    console.log(value)
         var i;
         // clear markers
         for (i = _options.minValue; i <= _options.maxValue; i++) {

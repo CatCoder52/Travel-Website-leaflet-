@@ -34,20 +34,17 @@ function clicker(number){
 }
 
 const send= ()=>{
-    const searchBar = document.querySelector('.select-dropdown.dropdown-trigger');
     searchResult.focus();
-    searchResult.value = searchBar.value;
+    searchResult.value = inputLocation.value;
     const data = {target:
-        {value: searchBar.value
+        {value: inputLocation.value,
         }
     }
-    checkItems(data);
-    searchController.changeValue(searchBar.value);
     const yOffset = -300; 
     const y = searchResult.getBoundingClientRect().top + window.pageYOffset + yOffset;
     window.scrollTo({top: y});
-    checkItems(e);
-    searchController.changeValue(searbBar.value);
+    checkItems(data);
+    searchController.changeValue(inputLocation.value);
 }
 // mymap.on('searchMarkerChange', ()=>{
 //     console.log('searchMarkerChange');

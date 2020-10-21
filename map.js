@@ -2,34 +2,42 @@
 listOfLocations=[
     {
         name:'capeTown',
+        keywords:'cape town cape-town south africa',
         cords:[-33.9249, 18.4241],
     },
     {
         name:'switzerland',
+        keywords:'switzerland matterhorn',
         cords:[45.9766, 7.6585],
     },
     {
         name:'australia',
+        keywords:'australia uluru',
         cords:[-25.3444, 131.0369],
     },
     {
         name:'canada',
+        keywords:'canada',
         cords:[50, -110],
     },
     {
         name:'japan',
+        keywords:'japan tokyo mt fuji',
         cords:[35.7, 139.75],
     },
     {
         name:'venice',
+        keywords:'italy venice',
         cords:[45.4408, 12.3155],
     },
     {
         name:'egypt',
+        keywords:'egypt Luxor',
         cords:[26.8206, 30.8025],
     },
     {
         name:'hawaii',
+        keywords:'hawaii america',
         cords:[19.8968, -155.5828],
     }
 ]
@@ -50,7 +58,7 @@ tiles.addTo(mymap)
 const markers=[]
 
 listOfLocations.forEach((location)=>{
-    const length = markers.push(L.marker(location.cords, {name: location.name}).addTo(mymap));
+    const length = markers.push(L.marker(location.cords, {name: location.keywords}).addTo(mymap));
     const index = length -1;
     console.log(markers[index]);
     L.DomUtil.addClass(markers[index]._icon, 'fullscreenMarker');
@@ -63,7 +71,7 @@ listOfLocations.forEach((location)=>{
 
 
 listOfLocations.forEach((location)=>{
-    let length = markers.push(L.marker(location.cords, {name: location.name}).addTo(mymap));
+    let length = markers.push(L.marker(location.cords, {name: location.keywords}).addTo(mymap));
     const index = length-1;
     L.DomUtil.addClass(markers[index]._icon, 'normalMarker');
     markers[index].bindPopup(`${location.name}`,{closeButton: false});
