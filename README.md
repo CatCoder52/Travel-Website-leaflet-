@@ -24,7 +24,7 @@ I created this as I normally use vanilla CSS and wanted to learn a CSS framework
 
 ### Front Page
 ![image of frontpage](./readMeImages/FrontPage.png)
-Has slider images as front-page section saying different slogans on each image.
+I use a image slider as front-page section saying different slogans on each image.
 
 Below is a "places to go" section in this section if you click on an image it enters the location of that image into the select element below. On submitting the select element, it scrolls down to the map and list of trips section and changes the value in the search bar to the entered location.
 
@@ -41,7 +41,7 @@ The Map has a fullscreen button using the LeafletJS fullscreen plugin. During fu
 
 
 ##### Issues
-I tried many different options but didn't want to spend money on the Google API maps or have large watermarks on options such as google free my maps or AtList maps. I finally decided on using LeafletJS which allowed me to change as much as I liked as it was not inside of an iframe.
+I tried many different options as I didn't want to spend money on the Google API maps or have large watermarks and lack of interactivity such as Google's free 'My Maps' or AtList maps. I finally decided on using LeafletJS which allowed me to change as much as I liked as it was not inside of an iframe.
 
 #### List of holidays
 ![list of travel options](./readMeImages/travelOptions.png)
