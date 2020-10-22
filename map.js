@@ -1,44 +1,58 @@
 
 listOfLocations=[
     {
-        name:'capeTown',
+        name:'Cape town',
+        tag:"#capeTownTrip",
         keywords:'cape town cape-town south africa',
         cords:[-33.9249, 18.4241],
     },
     {
-        name:'switzerland',
+        name:'Switzerland',
+        tag:"#switzerlandTrip",
         keywords:'switzerland matterhorn',
         cords:[45.9766, 7.6585],
     },
     {
-        name:'australia',
+        name:'Uluru',
+        tag:"#australiaTrip",
         keywords:'australia uluru',
         cords:[-25.3444, 131.0369],
     },
     {
         name:'canada',
+        tag:"#canadaTrip",
         keywords:'canada',
         cords:[50, -110],
     },
     {
-        name:'japan',
+        name:'Tokyo',
+        tag:"#japanTrip",
         keywords:'japan tokyo mt fuji',
         cords:[35.7, 139.75],
     },
     {
-        name:'venice',
+        name:'Venice',
+        tag:"#veniceTrip",
         keywords:'italy venice',
         cords:[45.4408, 12.3155],
     },
     {
-        name:'egypt',
+        name:'Luxor',
+        tag:"#egyptTrip",
         keywords:'egypt Luxor',
         cords:[26.8206, 30.8025],
     },
     {
-        name:'hawaii',
+        name:'Hawaii',
+        tag:'#hawaiiTrip',
         keywords:'hawaii america',
         cords:[19.8968, -155.5828],
+    },
+    {
+        name:'Beijing',
+        tag:'#chinaTrip',
+        keywords:'china beijing',
+        cords:[39.9042, 116.4074],
     }
 ]
 const mymap = L.map('mapid').setView([20, 0], 1);
@@ -62,7 +76,7 @@ listOfLocations.forEach((location)=>{
     const index = length -1;
     console.log(markers[index]);
     L.DomUtil.addClass(markers[index]._icon, 'fullscreenMarker');
-    const item = document.querySelector(`#${location.name}Trip`);
+    const item = document.querySelector(location.tag);
     if(item){
         var clone = item.cloneNode(true)
         markers[index].bindPopup(clone,{ maxWidth: 300, minWidth: 200, className:"fullscreenContent"});
@@ -83,7 +97,7 @@ listOfLocations.forEach((location)=>{
     });
     markers[index].on('click', function(ev) {
         const yOffset = -100; 
-        const element = document.getElementById(`${location.name}Trip`);
+        const element = document.querySelector(location.tag);
         const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
         window.scrollTo({top: y});
     });
