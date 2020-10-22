@@ -35,3 +35,191 @@ height: 100px;
     width: 90%;
     
 }
+
+    .box {
+    height: 200px;
+    width: 100%;
+    }
+    .center-align {
+    width: 100%;
+    }
+    .map {
+    height: 400px;
+    }
+    .cover {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+    }
+    div.i4ewOd-pzNkMb-haAclf {
+    position: relative;
+    }
+    .auto {
+    height: auto;
+    position: relative;
+    }
+    .covered {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0;
+    display: none;
+    }
+    .grid {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    }
+    .coverText {
+    position: absolute;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 0.75rem;
+    }
+    .coverBox {
+    position: relative;
+    margin-top: 17px;
+    height: 14em;
+    }
+    @media (max-width: 992px) {
+    .coverBox {
+        height: 23vh;
+    }
+    }
+    .star {
+    font-size: 1rem;
+    color: #ffce00;
+    }
+    .autoWidthCard {
+    width: fit-content;
+    backdrop-filter: opacity(0.5);
+    }
+    .fa-instagram {
+    color: transparent;
+    background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+    );
+    background: -webkit-radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    }
+    @media (max-width: 800px) {
+    .parallaxImage {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    }
+    #mapid {
+    height: 250px;
+    }
+    html {
+    scroll-behavior: smooth;
+    }
+    /* a.anchor {
+        display: block;
+        position: relative;
+        top: -250px;
+        visibility: hidden;
+    } */
+    .place {
+    opacity: 0;
+    }
+    .place:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    }
+    .padding {
+    padding: 2em;
+    }
+    .slightOpacityBack {
+    backdrop-filter: opacity(80%) blur(2px);
+    opacity: 0.8;
+    }
+    .slides li picture img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    }
+    @media(max-width: 500px){
+    .parallax-container{
+        height: 250px;
+    }
+    }
+    .leaflet-popup-content{
+    text-align: center;
+    }
+    
+    .leaflet-show-search-markers .leaflet-control-container .leaflet-top.leaflet-right input{
+        display: block !important;
+    }
+    .leaflet-control-searchBar{
+        /* display: none; */
+        
+        box-shadow: 1px 1px 2px 1px lightslategray;
+        background-color: #fff;
+        border: 2px solid rgba(0,0,0,0.2);
+        border-radius: 5px;
+        height: fit-content;
+        padding: 0px 5px;
+        box-sizing: border-box;
+        outline: lightslategray;
+    }
+    input:not([type]).leaflet-search-marker{
+    height: 24px;
+    margin-bottom: 2px;
+    outline: none;
+    
+    }
+    .navbar-fixed{
+    z-index: 1001;
+    }
+    .grid.materialBoxed{
+    height: 29.063em;
+    }
+    .caption .card h2{
+    margin: 0;
+
+font-size: 6em;
+}
+.caption .card{
+    border-left: 5px solid #e66060;
+    max-width: 600px;
+}
+    #goTOTOP i{
+    line-height: 22px;
+    position: relative;
+    top: 5px;
+    }
+
+    .card .card-image img {
+    object-fit: cover;
+    }
+    .sidenav{
+    z-index: 1004;
+    }
+    .leaflet-popup-content >.card > div.card-image > div > div > picture{
+    height: auto;
+    }
