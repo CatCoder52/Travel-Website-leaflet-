@@ -30,7 +30,7 @@
     <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
 <link rel="stylesheet" href="./styles.css">   
-<title>Document</title>
+<title>Travel Website</title>
     <style>
       .box {
         /* background-color: hsl(0, 0%, 15%); */
@@ -196,6 +196,27 @@
       .grid.materialBoxed{
         height: 29.063em;
       }
+      .caption .card h2{
+        margin: 0;
+    
+    font-size: 6em;
+}
+    .caption .card{
+      border-left: 5px solid #e66060;
+      max-width: 600px;
+    }
+      #goTOTOP i{
+        line-height: 22px;
+        position: relative;
+        top: 5px;
+      }
+
+      .card .card-image img {
+        object-fit: cover;
+      }
+      .sidenav{
+        z-index: 1004;
+      }
     </style>
   </head>
   <body>
@@ -206,7 +227,7 @@
           <i class="material-icons">menu</i>
         </a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="./index.html">Home</a></li>
+          <li><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#trips">Trips</a></li>
         </ul>
@@ -214,57 +235,57 @@
     </div>
 
     <ul class="sidenav" id="mobile-links">
-      <li><a href="./index.html">Home</a></li>
+      <li><a href="#">Home</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="./allPosts.html">Trips</a></li>
+      <li><a href="#trips">Trips</a></li>
     </ul>
 
     <div class="slider">
       <ul class="slides">
         <li>
-        <picture>
+        <picture loading="lazy">
             
             <source  media="(max-width:1280px)" srcset="./images/1280x1024/manWithLake.jpg">
             <source  media="(min-width:1024px)" srcset="./images/1024x768/manWithLake.jpg"> 
             <source  media="(min-width:360px)" srcset="./images/360x740/manWithLake.jpg">       
-            <img src="./images/headers/manWithLake.jpg" loading="lazy" />
+            <img src="./images/headers/manWithLake.jpg"   width="100%" height="100%" alt="man staring at lake"/>
         </picture>
 
           <div class="caption center-align">
             <div
               class="card black slightOpacityBack lighten-3 autoWidthCard center-align padding"
             >
-              <h3 class="light white-text text-lighten-3">Travel Site</h3>
-              <a href="#" class="btn red large">learn More</a>
+              <h2 class="light white-text text-lighten-3">Travel Site</h2>
+              
             </div>
           </div>
         </li>
         <li>
-            <picture>
+            <picture loading="lazy">
                 
                 <source  media="(min-width:1280px)" srcset="./images/1280x1024/tokyo.jpg">
                 <source  media="(max-width:1024px)" srcset="./images/1024x768/tokyo.jpg"> 
                 <source  media="(max-width:360px)" srcset="./images/360x740/tokyo.jpg">       
-                <img src="./images/headers/tokyo.jpg" loading="lazy" />
+                <img src="./images/headers/tokyo.jpg"   width="100%" height="100%" alt="tokyo"/>
             </picture>
-          <!-- <img src="./images/Compressed/tokyo.avif" /> -->
-          <div class="caption left-align">
+          
+          <div class="caption center-align">
             <div
               class="card black slightOpacityBack lighten-3 autoWidthCard center-align padding"
             >
-              <h3>Take your dream vacation</h3>
-              <a href="#" class="btn large red">learn More</a>
+              <h3>Take Your Dream Vacation</h3>
+              
             </div>
           </div>
         </li>
         <li>
-            <picture>
+            <picture loading="lazy" >
                 <source  media="(max-width:1280px)" srcset="./images/1280x1024/camel.jpg">
                 <source  media="(min-width:1024px)" srcset="./images/1024x768/camel.jpg"> 
                 <source  media="(min-width:360px)" srcset="./images/360x740/camel.jpg">       
-                <img src="./images/headers/camel.jpg" loading="lazy" />
+                <img src="./images/headers/camel.jpg"  width="100%" height="100%" alt="camel"/>
             </picture>
-          <!-- <img src="./images/camel.jpg" /> -->
+          
           <div class="white-text text-lighten-2 caption right-align">
             <div
               class="card black slightOpacityBack lighten-3 autoWidthCard center-align padding"
@@ -274,7 +295,6 @@
                 Chosen for great knowledge of their country, and a passion to
                 make your trip extraordinary.
               </h5>
-              <a href="#" class="btn large red">learn More</a>
             </div>
           </div>
         </li>
@@ -283,7 +303,7 @@
                 <source  media="(min-width:1280px)" srcset="./images/1280x1024/beach.jpg">
                 <source  media="(min-width:1024px)" srcset="./images/1024x768/beach.jpg"> 
                 <source  media="(max-width:360px)" srcset="./images/360x740/beach.jpg">       
-                <img src="./images/headers/beach.jpg" loading="lazy" />
+                <img src="./images/headers/beach.jpg" loading="lazy"  width="100%" height="100%" alt="beach"/>
                 </picture>
           <div class="white-text caption center-align">
             <div
@@ -291,7 +311,6 @@
             >
               <h3>Take a break</h3>
               <h5 class="light grey-text text-lighten-3">You deserve it</h5>
-              <a href="#" class="btn red large">learn More</a>
             </div>
           </div>
         </li>
@@ -300,16 +319,14 @@
                 <source  media="(min-width:1280px)" srcset="./images/1280x1024/campfire.jpg">
                 <source  media="(min-width:1024px)" srcset="./images/1024x768/campfire.jpg"> 
                 <source  media="(min-width:360px)" srcset="./images/360x740/campfire.jpg">       
-                <img src="./images/headers/campfire.jpg" loading="lazy" />
+                <img src="./images/headers/campfire.jpg" loading="lazy"  width="100%" height="100%" alt="campfire"/>
             </picture>
-          <!-- <img src="./images/campfire.jpg" /> -->
+          
           <div class="black-text text-lighten-2 caption center-align">
             <div
               class="card black slightOpacityBack lighten-3 autoWidthCard center-align padding"
             >
               <h3 class="white-text">Where will your next tour take you?</h3>
-              <h4 class="light grey-text text-lighten-3">Find out more</h4>
-              <a href="#" class="red btn large">learn More</a>
             </div>
           </div>
         </li>
@@ -332,7 +349,7 @@
             >
               <p class="white-text center-align">Australia</p>
             </div>
-            <img class="grid" src="./images/fullSizeImages/australia.jpg" alt="" />
+            <img class="grid" src="./images/360x200/australia.jpg" alt="australia uluru"  width="100%" height="100%"/>
           </div>
           <div class="col s6 m4 box coverBox">
             <div
@@ -341,7 +358,7 @@
             >
               <p class="white-text center-align location">Hawaii</p>
             </div>
-            <img class="grid" src="./images/fullSizeImages/beach.jpg" alt="" />
+            <img class="grid" src="./images/360x200/beach.jpg" alt="hawaii beach"  width="100%" height="100%" />
           </div>
 
           <div class="col s6 m4 box lighten-3 coverBox">
@@ -351,7 +368,7 @@
             >
               <p class="white-text center-align">Italy</p>
             </div>
-            <img class="grid" src="./images/fullSizeImages/venice.jpg" alt="" />
+            <img class="grid" src="./images/360x200/venice.jpg" alt="venice"  width="100%" height="100%"/>
           </div>
           <div class="col s6 m4 box coverBox">
             <div
@@ -361,7 +378,7 @@
               <p class="white-text center-align">Egypt</p>
             </div>
 
-            <img class="grid" src="./images/camel.jpg" alt="" />
+            <img class="grid" src="./images/360x200/camel.jpg" alt="camel ride"  width="100%" height="100%"/>
           </div>
           <div class="col s6 m4 box coverBox">
             <div
@@ -370,17 +387,23 @@
             >
               <p class="white-text center-align">China</p>
             </div>
-            <img class="grid" src="./images/Compressed/greatWall.avif" alt="" />
+            <img class="grid" src="./images/360x200/greatWall.jpg" alt="great wall of china"  width="100%" height="100%"/>
           </div>
         </div>
         <div class="col m6 hide-on-med-and-down">
           <div class="s12 col map" style="margin-top: 17px; height: 29.063em">
-            <img
+            <picture>
+              <source  media="(min-width:1000px)" srcset="./images/1024x768/donkey.jpg"> 
+              <source  media="(min-width:360px)" srcset="./images/360x740/donkey.jpg">       
+              <img
               class="grid materialboxed"
-              style="height: 29.063em"
-              src="./images/fullSizeImages/donkey.jpg"
+              style="height: 29.063em;"
+              src="./images/1024x768/donkey.jpg"
               alt="donkey"
+              width="100%" 
             />
+            </picture>
+            
           </div>
         </div>
       </div>
@@ -422,7 +445,7 @@
             <source  media="(min-width:1280px)" srcset="./images/1280x1024/hikeMountain.jpg">
             <source  media="(min-width:500px)" srcset="./images/1024x768/hikeMountain.jpg"> 
             <source  media="(min-width:360px)" srcset="./images/360x740/hikeMountain.jpg">       
-            <img src="./images/fullSizeImages/hikeMountain.jpg" />
+            <img src="./images/fullSizeImages/hikeMountain.jpg" loading="lazy"  width="100%" alt="people hiking"/>
         </picture>
         
       </div>
@@ -515,11 +538,10 @@
         <div class="col s12 l4 holiday">
           <div class="card large" id="switzerlandTrip">
             <div class="card-image">
-                <picture>
-                    <source  media="(min-width:1280px)" srcset="./images/1280x1024/matterhorn.jpg">
-                    <source  media="(min-width:1024px)" srcset="./images/1024x768/matterhorn.jpg"> 
+                <picture class="materialboxed cover">
+
                     <source  media="(max-width:360px)" srcset="./images/360x740/matterhorn.jpg">       
-                    <img class="materialboxed cover" src="./images/fullSizeImages/matterhorn.jpg" alt="australia uluru"/>
+                    <img  src="./images/1024x768/matterhorn.jpg" alt="matterhorn"  width="100%" height="100%"/>
                 </picture>
               
             </div>
@@ -549,11 +571,9 @@
         <div class="col s12 l4 holiday">
           <div class="card large" id="australiaTrip">
             <div class="card-image">
-                <picture>
-                    <source  media="(min-width:1280px)" srcset="./images/1280x1024/australia.jpg">
-                    <source  media="(min-width:1024px)" srcset="./images/1024x768/australia.jpg"> 
+                <picture class="materialboxed cover" >
                     <source  media="(max-width:360px)" srcset="./images/360x740/australia.jpg">       
-                    <img class="materialboxed cover" src="./images/fullSizeImages/australia.jpg" alt="australia uluru"/>
+                    <img src="./images/1024x768/australia.jpg" alt="australia uluru"  width="100%" height="100%"/>
                 </picture>
               
             </div>
@@ -584,11 +604,9 @@
         <div class="col s12 l4 holiday">
           <div class="card large" id="veniceTrip">
             <div class="card-image">
-                <picture>
-                    <source  media="(min-width:1280px)" srcset="./images/1280x1024/venice.jpg">
-                    <source  media="(min-width:1024px)" srcset="./images/1024x768/venice.jpg"> 
+                <picture class="materialboxed cover">
                     <source  media="(max-width:360px)" srcset="./images/360x740/venice.jpg">       
-                    <img class="materialboxed cover" src="./images/fullSizeImages/venice.jpg" alt="Venice"/>
+                    <img  src="./images/1024x768/venice.jpg" alt="Venice" width="100%" height="100%"/>
                 </picture>
             </div>
             <div class="card-content">
@@ -615,11 +633,11 @@
         <div class="col s12 l4 holiday">
           <div class="card large" id="egyptTrip">
             <div class="card-image">
-              <img
-                class="materialboxed cover"
-                src="./images/camel.jpg"
-                alt="Venice"
-              />
+              <picture class="materialboxed cover">
+                <source  media="(max-width:360px)" srcset="./images/360x200/camel.jpg">       
+                <img  src="./images/1024x768/camel.jpg" alt="camel riding" width="100%" height="100%"/>
+            </picture>
+            
             </div>
             <div class="card-content">
               <span class="card-title holidayName"> Egypt </span>
@@ -649,11 +667,9 @@
         <div class="col s12 l4 holiday">
           <div class="card large" id="canadaTrip">
             <div class="card-image" >
-                <picture>
-                    <source  media="(min-width:1280px)" srcset="./images/1280x1024/canadaMountain.jpg">
-                    <source  media="(min-width:1024px)" srcset="./images/1024x768/canadaMountain.jpg"> 
-                    <source  media="(max-width:360px)" srcset="./images/360x740/canadaMountain.jpg">       
-                    <img class="materialboxed cover" src="./images/fullSizeImages/canadaMountain.jpg" alt="canada Mountain"/>
+                <picture class="materialboxed cover">
+                    <source  media="(max-width:360px)" srcset="./images/360x200/canadaMountain.jpg">       
+                    <img  src="./images/1024x768/canadaMountain.jpg" alt="canada Mountain" width="100%" height="100%"/>
                 </picture>
             </div>
             <div class="card-content">
@@ -682,11 +698,10 @@
         <div class="col s12 l4 holiday" id="hawaiiTrip">
           <div class="card large">
             <div class="card-image">
-                <picture>
-                    <source  media="(min-width:1280px)" srcset="./images/1280x1024/beachView2.jpg">
-                    <source  media="(min-width:1024px)" srcset="./images/1024x768/beachView2.jpg"> 
-                    <source  media="(max-width:360px)" srcset="./images/360x740/beachView2.jpg">       
-                    <img class="materialboxed cover" src="./images/fullSizeImages/beachView2.jpg" alt="beach"/>
+                <picture class="materialboxed cover">
+
+                    <source  media="(max-width:360px)" srcset="./images/360x200/beachView2.jpg">       
+                    <img  src="./images/1024x768/beachView2.jpg" alt="beach" width="100%" height="100%"/>
                 </picture>
             </div>
             <div class="card-content">
@@ -715,11 +730,10 @@
         <div class="col s12 l4 holiday">
           <div class="card large" id="chinaTrip">
             <div class="card-image">
-                <picture>
-                    <source  media="(min-width:1280px)" srcset="./images/1280x1024/Chinabuilding.jpg">
-                    <source  media="(min-width:1024px)" srcset="./images/1024x768/Chinabuilding.jpg"> 
-                    <source  media="(max-width:360px)" srcset="./images/360x740/Chinabuilding.jpg">       
-                    <img class="materialboxed cover" src="./images/fullSizeImages/Chinabuilding.jpg" alt="beach"/>
+                <picture class="materialboxed cover">
+
+                    <source  media="(max-width:360px)" srcset="./images/360x200/Chinabuilding.jpg">       
+                    <img  src="./images/1024x768/Chinabuilding.jpg" alt="China building" width="100%" height="100%"/>
                 </picture> 
               
             </div>
@@ -749,11 +763,10 @@
         <div class="col s12  l4 holiday">
           <div class="card large" id="capeTownTrip">
             <div class="card-image">
-                <picture>
-                    <source  media="(min-width:1280px)" srcset="./images/1280x1024/cape-town.jpg">
-                    <source  media="(min-width:1024px)" srcset="./images/1024x768/cape-town.jpg"> 
-                    <source  media="(max-width:360px)" srcset="./images/360x740/cape-town.jpg">       
-                    <img class="materialboxed cover" src="./images/fullSizeImages/cape-town.jpg" alt="cape-town"/>
+                <picture class="materialboxed cover">
+ 
+                    <source  media="(max-width:360px)" srcset="./images/360x200/cape-town.jpg">       
+                    <img  src="./images/1024x768/cape-town.jpg" alt="cape-town" width="100%" height="100%"/>
                 </picture> 
               
             </div>
@@ -783,11 +796,10 @@
         <div class="col s12  l4">
           <div class="card large" id="japanTrip">
             <div class="card-image">
-                <picture>
-                    <source  media="(min-width:1280px)" srcset="./images/1280x1024/mtfuji.jpg">
-                    <source  media="(min-width:1024px)" srcset="./images/1024x768/mtfuji.jpg"> 
-                    <source  media="(max-width:360px)" srcset="./images/360x740/mtfuji.jpg">       
-                    <img class="materialboxed cover" src="./images/asia/mtfuji.jpg" alt="cape-town"/>
+                <picture class="materialboxed cover">
+
+                    <source  media="(max-width:360px)" srcset="./images/360x200/mtfuji.jpg">       
+                    <img  src="./images/1024x768/mtfuji.jpg" alt="mt fuji" width="100%" height="100%"/>
                 </picture>
               
             </div>
@@ -817,9 +829,8 @@
       </div>
     </div>
     <div class="container center-align">
-      <!-- <a href="./allPosts.html" class="btn red white-text">All Trips</a> -->
 
-      <a href="#" class="btn"
+      <a href="#" class="btn large" id="goTOTOP"
         ><i class="material-icons">keyboard_arrow_up</i> Back to top</a
       >
     </div>
@@ -833,26 +844,21 @@
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
-            <h5 class="white-text">Footer Content</h5>
-            <p class="grey-text text-lighten-4">
-              You can use rows and columns here to organize your footer content.
-            </p>
+            <h5 class="white-text">Travel Site</h5>
           </div>
           <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Links</h5>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Link</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Careers</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Jobs</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">All Trips</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Help</a></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="footer-copyright">
         <div class="container">
-          © Copyright Text
-          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          © Travel Site
         </div>
       </div>
     </footer>
